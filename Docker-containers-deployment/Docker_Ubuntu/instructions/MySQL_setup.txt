@@ -1,0 +1,33 @@
+In bash start mysql server:
+
+	service mysql stop
+	usermod -d /var/lib/mysql/ mysql
+	service mysql start
+
+Check it's status (must be '+'):
+
+	service --status-all
+	#service mysql status
+
+Run the security script:
+
+	mysql_secure_installation
+
+If you decide to use the password validation plugin, the script will prompt you to select the password validation level.
+Next, accept all the conditions ('y'), set your password.
+
+Run MySQL and change your plagin for root ('password' - change for your pass.):
+	mysql
+	SELECT user,authentication_string,plugin,host FROM mysql.user;
+	ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'password';
+	FLUSH PRIVILEGES;
+
+Check your plagin for root (it could be caching_sha2_password):
+	SELECT user,authentication_string,plugin,host FROM mysql.user;
+	exit
+
+Now you can now log in with your password with this command:
+	mysql -u root -p
+
+
+

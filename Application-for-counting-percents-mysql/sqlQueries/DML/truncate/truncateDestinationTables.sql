@@ -1,0 +1,4 @@
+USE destinationDB;
+TRUNCATE TABLE destination_table_increase_in_stocks_Bid;
+TRUNCATE TABLE average_per_years_increase_in_stocks_Bid;
+TRUNCATE TABLE audit_increase_in_stocks;

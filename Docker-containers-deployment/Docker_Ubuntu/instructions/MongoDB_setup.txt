@@ -1,0 +1,32 @@
+In bash start mongo server:
+
+	service mongo start
+
+Check it's status (must be '+'):
+
+	service --status-all
+	#service mongo status
+
+Run Mongo client, check your connection and change user:
+
+	mongo 
+	version()
+	use admin
+	db.createUser(
+	{
+	user: "Your user",
+	pwd: passwordPrompt(),
+	roles: [ { role: "userAdminAnyDatabase", db: "your database" }, "readWriteAnyDatabase" ]
+	}
+	)
+	quit()
+	
+Open nano/vim and insert rows:
+
+	vim /etc/mongod.conf
+	security:
+		authorization: enabled
+		
+Restart Mongo and run it with user and password:
+	service mongo restart
+	mongo --authenticationDatabase "database name" -u "user" -p

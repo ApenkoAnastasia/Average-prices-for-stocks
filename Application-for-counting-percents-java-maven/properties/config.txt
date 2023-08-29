@@ -1,0 +1,9 @@
+USERNAME=root
+PASSWORD=12344321
+HOST=localhost
+DATABASE=stock_price_incrementDB
+URL="jdbc:mysql://localhost/stock_price_incrementDB"
+DELIMITER=";"
+ALGORITHMTYPE="o-c"
+DIRNAME=NecessaryFiles
+ZIPNAME=fund

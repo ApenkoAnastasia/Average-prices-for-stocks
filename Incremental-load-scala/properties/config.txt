@@ -1,0 +1,9 @@
+USERNAME=root
+PASSWORD=12344321
+HOST=localhost
+DATABASE=destinationDB
+URL="jdbc:mysql://localhost/destinationDB"
+DELIMITER=";"
+ALGORITHMTYPE="o-c"
+DIRNAME=NecessaryFiles
+ZIPNAME=fund

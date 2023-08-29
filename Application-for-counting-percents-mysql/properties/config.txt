@@ -1,0 +1,12 @@
+USERNAME=apenko
+PASSWORD=14111997
+HOST=localhost
+DESTINATION_DATABASE=destinationDB
+DESTINATION_URL="jdbc:mysql://localhost/destinationDB"
+STAGING_DATABASE=staging_auditDB
+STAGING_URL="jdbc:mysql://localhost/staging_auditDB"
+DELIMITER=";"
+ALGORITHMTYPE="o-c"
+DIRNAME=SourseFiles
+ZIPNAME=fund
+STAGING_NAME=StagingFileSystem

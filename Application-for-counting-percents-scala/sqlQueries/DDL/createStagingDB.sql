@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS staging_auditDB;
+CREATE DATABASE IF NOT EXISTS staging_auditDB;
